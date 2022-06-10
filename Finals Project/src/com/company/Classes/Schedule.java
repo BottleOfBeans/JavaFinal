@@ -28,7 +28,7 @@ public class Schedule {
 
     public void replace(Course newcourse){
         for(int x = 0; x<courseArray.length; x++){
-            if(courseArray[x].getPeriod()>=newcourse.getPeriod()){
+            if(courseArray[x].getPeriod()==newcourse.getPeriod()){
                 courseArray[x] = newcourse;
             }
         }
